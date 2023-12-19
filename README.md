@@ -15,7 +15,7 @@ This application uses a the Google Calendar API to fetch upcoming events. It wil
 - App Shortcut Addition to Home
 - Visual Charts of Event Statistics
 
-### Feature 1: Filter Events by City
+## Feature 1: Filter Events by City
 
 **Scenario:** Viewing All Upcoming Events
 Given: The user has not initiated a search for a specific city in the Calendar App.
