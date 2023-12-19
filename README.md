@@ -6,7 +6,33 @@ An application that uses Google Calendar API to fetch upcoming events
 
 This application uses a the Google Calendar API to fetch upcoming events. It will list and give details about these events and give easy access to all of the information.
 
-## Feature 1: Show Hide Event Details
+## Feature 1: Filter Events by City
+
+### User Story: Viewing All Upcoming Events
+
+Given: The user has not initiated a search for a specific city in the Calendar App.
+
+When: The user navigates to the events section or main calendar view.
+
+Then: The app should display all upcoming events from all cities by default.
+
+### User Story: Searching for a City
+
+Given: The user is in the Calendar App and wants to filter events by a specific city.
+
+When: The user starts typing the name of a city in the search bar.
+
+Then: The app should provide a list of suggested cities dynamically based on the user's input. The list should update in real-time as the user continues typing.
+
+### User Story: Selecting a City from Suggestions
+
+Given: The user has entered a partial or complete city name in the search bar.
+
+When: The user selects a city from the list of suggestions.
+
+Then: The app should filter and display upcoming events exclusively for the selected city. The selected city should be clearly indicated, and the user can easily switch back to viewing events from all cities.
+
+## Feature 2: Show Hide Event Details
 
 ### User Story: Viewing Event Details
 
@@ -32,7 +58,7 @@ When: The user clicks on the same event again or clicks on a "Toggle Details" bu
 
 Then: The event details should toggle between being shown and hidden, providing a seamless way for the user to switch between views.
 
-## Feature 2: Specify Number of Events
+## Feature 3: Specify Number of Events
 
 ### User Story: Setting Default Number of Events
 
@@ -58,7 +84,7 @@ When: The user returns to the main calendar view.
 
 Then: The calendar should show the specified number of events, and a scrollbar or pagination feature should be available if the total number of events exceeds the specified limit.
 
-## Feature 3: Use the app when Offline
+## Feature 4: Use the app when Offline
 
 ### User Story: Offline Mode
 
@@ -84,7 +110,7 @@ When: The user loses internet connectivity during the process.
 
 Then: The Calendar App should display an error message indicating the connection loss and inform the user that the changes may not be applied until a stable internet connection is restored.
 
-## Feature 4: Add an App shortcut to the home screen
+## Feature 5: Add an App shortcut to the home screen
 
 ### User Story: Adding App Shortcut
 
@@ -110,7 +136,7 @@ When: The user taps on the Calendar App shortcut.
 
 Then: The Calendar App should launch directly, providing convenient and quick access to the calendar without having to navigate through the device's app menu.
 
-## Feature 5: Display Charts Visualizing Events Details
+## Feature 6: Display Charts Visualizing Events Details
 
 ### User Story: Viewing City-Based Event Chart
 
