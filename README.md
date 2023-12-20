@@ -34,6 +34,11 @@ Then: The app should filter and display upcoming events exclusively for the sele
 
 ## Feature 2: Show Hide Event Details
 
+**Scenario:** Viewing Collapsed Events
+Given: The user is in the Calendar App and has a series of events listed.
+When: The user navigates to a section where events are grouped or listed in a collapsed format.
+Then: The app should display the series of events in a collapsed view, showing essential details for each event, such as the event name, date, and time.
+
 **Scenario:** Viewing Event Details
 Given: The user is logged into the Calendar App and has events scheduled.
 When: The user clicks on a specific event on the calendar.
