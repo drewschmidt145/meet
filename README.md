@@ -6,6 +6,10 @@ An application that uses Google Calendar API to fetch upcoming events
 
 This application uses a the Google Calendar API to fetch upcoming events. It will list and give details about these events and give easy access to all of the information.
 
+## Live Application
+
+Click [here](https://drewschmidt145.github.io/meet/) to go to the Live Application. 
+
 ### Key Features
 
 - Filter Events by City
