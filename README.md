@@ -126,3 +126,6 @@ Given: The user has the Calendar App open and new events are added or existing e
 When: A change occurs in the events data.
 Then: The city-based event chart should update in real-time, reflecting the latest changes in the number of upcoming events in each city.
 
+### Serverless Functions
+
+This application will use serveless functions to allow users to collect the data of the events. This will use the API to collect data and transfer the resources to the user without need of actual storage of resources. This is very helpful due to not needing the storage or manually configuring the resources. This usually saves a lot of money that would be spent or time and effort for the developers.
