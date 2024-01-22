@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event';
 
 describe('<Event /> component', () => {
     let EventComponent;
-    const event = mockData[0].items[0];
+    const event = mockData[0];
     beforeEach(() => {
         EventComponent = render(<Event event={event} />);
     });
