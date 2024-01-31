@@ -31,10 +31,12 @@ Given: The user is in the Calendar App and wants to filter events by a specific 
 When: The user starts typing the name of a city in the search bar.
 Then: The app should provide a list of suggested cities dynamically based on the user's input. The list should update in real-time as the user continues typing.
 
-**Scenario:** Selecting a City from Suggestions
-Given: The user has entered a partial or complete city name in the search bar.
-When: The user selects a city from the list of suggestions.
-Then: The app should filter and display upcoming events exclusively for the selected city. The selected city should be clearly indicated, and the user can easily switch back to viewing events from all cities.
+**Scenario:** User can select a city from the suggested list.
+Given user was typing “Berlin” in the city textbox
+And the list of suggested cities is showing
+When the user selects a city (e.g., “Berlin, Germany”) from the list
+Then their city should be changed to that city (i.e., “Berlin, Germany”)
+And the user should receive a list of upcoming events in that city
 
 ## Feature 2: Show Hide Event Details
 
