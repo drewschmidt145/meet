@@ -18,7 +18,6 @@ const App = () => {
 
   useEffect(() => {
     if (navigator.onLine) {
-      setWarningAlert(" ");
     } else {
       setWarningAlert("You have gone offline, events may not be up to date!");
     }
