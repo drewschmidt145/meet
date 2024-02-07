@@ -11,12 +11,13 @@ const NumberOfEvents = ({setCurrentNOE, setErrorAlert}) => {
         let infoText;
         if (isNaN(value) || value <= 0) {
             infoText = "Only positive numbers are allowed"
+            setErrorAlert(infoText);
         } else {
             infoText = "";
+            setErrorAlert(infoText);
             setCurrentNOE(value);
         } 
-        setErrorAlert(infoText);
-    }
+    };
 
     return (
         <div id="numberOfEvents">
