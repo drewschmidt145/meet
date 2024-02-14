@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { extractLocations, getEvents } from './api';
 import { InfoAlert, ErrorAlert, WarningAlert } from './components/Alert';
 import CityEventsCharts from './components/CityEventsCharts';
-import CityGenresCharts from './components/CityGenresCharts';
+import EventGenresCharts from './components/EventGenresCharts';
 
 import './App.css';
 
@@ -54,7 +54,7 @@ const App = () => {
       />
       <div className='charts-container'>
         <CityEventsCharts allLocations={allLocations} events={events}/>
-        <CityGenresCharts events={events}/>
+        <EventGenresCharts events={events}/>
       </div>
       <EventList events={events} />
     </div>
