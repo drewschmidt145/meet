@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
-const EventGenresChart = ({ events }) => {
+const EventGenresCharts = ({ events }) => {
 
     const [data, setData] = useState([]);
     const genres = ['React', 'JavaScript', 'Node', 'jQuery', 'Angular'];
@@ -68,4 +68,4 @@ const EventGenresChart = ({ events }) => {
     );
 }
 
-export default EventGenresChart;
+export default EventGenresCharts;
